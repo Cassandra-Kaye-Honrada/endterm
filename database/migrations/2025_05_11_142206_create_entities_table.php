@@ -12,11 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('entities', function (Blueprint $table) {
-            // $table->id();
-            $table->id('entity_id');
-            $table->string('entity_name');
-            $table->string('branch');
-            $table->string('fund_cluster');
+            $table->id();
             $table->timestamps();
         });
     }
